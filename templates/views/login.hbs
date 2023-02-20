@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    {{>links}}
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="login-box">
+      <div class="hero">
+        <div class="form-box">
+          <a href="/" class="close-btn">&times;</a>
+          <h2>Login</h2>
+          <form id="login" class="input-group">
+            <div class="input-field">
+              <i class="fa fa-user" aria-hidden="true"></i>
+              <input type="text" class="field" placeholder="User ID" required />
+            </div>
+            <div class="input-field">
+              <i class="fa fa-lock" aria-hidden="true"></i>
+              <input
+                type="password"
+                class="field"
+                placeholder="Confirm Password"
+                required
+              />
+            </div>
+            <input type="checkbox" class="check-box" /><span>Remember Password</span>
+            <button type="submit" class="submit-btn">Log In</button>
+          </form>
+          <div class="aside">
+            <a href="">Forgot Password?</a>
+            <p>Don't have an account?
+              <a href="/register">Register Now</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

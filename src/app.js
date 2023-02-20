@@ -23,6 +23,9 @@ app.get("/login", (req, res) => {
 app.get("/register", (req, res) => {
   res.render("register");
 });
+app.get("/booking", (req, res) => {
+  res.render("booking");
+});
 
 app.listen(port, () => {
   console.log(`Listening to port no. ${port}`);

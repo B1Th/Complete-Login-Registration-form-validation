@@ -9,19 +9,20 @@
         <div class="form-box2">
           <a href="/" class="close-btn2">&times;</a>
           <h2>Register</h2>
-          <form id="register" class="input-group2">
+          <form id="register" class="input-group2" action="/register" method="POST">
             <div class="input-field">
               <i class="fa fa-user" aria-hidden="true"></i>
-              <input type="text" class="field" placeholder="User ID" required />
+              <input type="text" name="usename" class="field" placeholder="User ID" required />
             </div>
             <div class="input-field">
               <i class="fa fa-envelope" aria-hidden="true"></i>
-              <input type="email" class="field" placeholder="Email" required />
+              <input type="email" name="email" class="field" placeholder="Email" required />
             </div>
             <div class="input-field">
               <i class="fa fa-lock" aria-hidden="true"></i>
               <input
                 type="password"
+                name="password"
                 class="field"
                 placeholder="Password"
                 required
@@ -31,6 +32,7 @@
               <i class="fa fa-lock" aria-hidden="true"></i>
               <input
                 type="password"
+                name="password"
                 class="field"
                 placeholder="Confirm Password"
                 required

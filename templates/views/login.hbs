@@ -9,17 +9,18 @@
         <div class="form-box">
           <a href="/" class="close-btn">&times;</a>
           <h2>Login</h2>
-          <form id="login" class="input-group">
+          <form id="login" class="input-group" action="/login" method="POST">
             <div class="input-field">
               <i class="fa fa-user" aria-hidden="true"></i>
-              <input type="text" class="field" placeholder="User ID" required />
+              <input type="text" name="username" class="field" placeholder="User ID" required />
             </div>
             <div class="input-field">
               <i class="fa fa-lock" aria-hidden="true"></i>
               <input
                 type="password"
+                name="password"
                 class="field"
-                placeholder="Confirm Password"
+                placeholder="Password"
                 required
               />
             </div>
